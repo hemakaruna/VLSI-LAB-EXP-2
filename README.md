@@ -49,11 +49,92 @@ STEP:10 Double click on the Implement Design and double click on the Generate Pr
 STEP:11  On the board, by giving required input, the LEDs starts to glow light, indicating the output.
 
 VERILOG CODE
+ Encoder:
+``` module encoder(
+  input [7:0] D,
+  output [2:0] y);
+  
+  assign y[2] = D[4] | D[5] | D[6] | D[7];
+  assign y[1] = D[2] | D[3] | D[6] | D[7];
+  assign y[0] = D[1] | D[3] | D[5] | D[7];
+endmodule```
 
-   <<< TYPE YOUR VERILOG CODE >>>
+Decoder:
+   ```module decoder(
+  input [2:0] D,
+  output reg [7:0] y);
+  
+  always@(D) begin
+    y = 0;
+    case(D)
+      3'b000: y[0] = 1'b1;
+      3'b001: y[1] = 1'b1;
+      3'b010: y[2] = 1'b1;
+      3'b011: y[3] = 1'b1;
+      3'b100: y[4] = 1'b1;
+      3'b101: y[5] = 1'b1;
+      3'b110: y[6] = 1'b1;
+      3'b111: y[7] = 1'b1;
+      default: y = 0;
+    endcase
+  end
+endmodule```
 
+Multiplexer:
+```module multi(i,s,y);
+input[7:0]i;
+input[2:0]s;
+output reg y;
+always@(*)
+begin
+case({s[2],s[1],s[0]})
+3'b000:y=i[0];
+3'b001:y=i[1];
+3'b010:y=i[2];
+3'b011:y=i[3];
+3'b100:y=i[4];
+3'b101:y=i[5];
+3'b110:y=i[6];
+3'b111:y=i[7];
+endcase end
+endmodule```
+
+Demultiplexer:
+```module demultiplexer(d1,d2,d3,d4,d5,d6,d7,d8,i,s0,s1,s2);
+input i,s0,s1,s2;
+output d1,d2,d3,d4,d5,d6,d7,d8;
+wire w1,w2,w3;
+not g1(w1,s0);
+not g2(w2,s1);
+not g3(w3,s2);
+and g4(d1,w1,w2,w3,i);
+and g5(d2,w1,w2,s2,i);
+and g6(d3,w1,s1,w3,i);
+and g7(d4,w1,s1,s2,i);
+and g8(d5,s0,w2,w3,i);
+and g9(d6,s0,w2,s2,i);
+and g10(d7,s0,s1,w3,i);
+and g11(d8,s0,s1,s2,i);
+endmodule```
+
+Magnitude comparator:
+```module comparator(
+  input [3:0] A, B,
+  output reg A_grt_B, A_less_B, A_eq_B);
+  
+  always@(*) begin
+    A_grt_B = 0; A_less_B = 0; A_eq_B = 0;
+    if(A>B) A_grt_B = 1'b1;
+    else if(A<B) A_less_B = 1'b1;
+    else A_eq_B = 1'b1;
+  end
+endmodule```
+
+ 
 OUTPUT WAVEFORM
- <<< PASTE YOUR OUTPUT WAVEFORM >>>
+Encoder:
+![Screenshot (28)](https://github.com/hemakaruna/VLSI-LAB-EXP-2/assets/160728787/eb2f7f0c-8af6-4280-88c9-cb0148f941b8)
+
 
 RESULT
 
