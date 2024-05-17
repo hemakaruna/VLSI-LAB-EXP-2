@@ -52,18 +52,21 @@ VERILOG CODE
  
  Encoder:
  
-``` module encoder(
+```
+module encoder(
   input [7:0] D,
   output [2:0] y);
   
   assign y[2] = D[4] | D[5] | D[6] | D[7];
   assign y[1] = D[2] | D[3] | D[6] | D[7];
   assign y[0] = D[1] | D[3] | D[5] | D[7];
-endmodule```
+endmodule
+```
 
 Decoder:
 
-   ```module decoder(
+   ```
+module decoder(
   input [2:0] D,
   output reg [7:0] y);
   
@@ -81,11 +84,13 @@ Decoder:
       default: y = 0;
     endcase
   end
-endmodule```
+endmodule
+```
 
 Multiplexer:
 
-```module multi(i,s,y);
+```
+module multi(i,s,y);
 input[7:0]i;
 input[2:0]s;
 output reg y;
@@ -101,11 +106,13 @@ case({s[2],s[1],s[0]})
 3'b110:y=i[6];
 3'b111:y=i[7];
 endcase end
-endmodule```
+endmodule
+```
 
 Demultiplexer:
 
-```module demultiplexer(d1,d2,d3,d4,d5,d6,d7,d8,i,s0,s1,s2);
+```
+module demultiplexer(d1,d2,d3,d4,d5,d6,d7,d8,i,s0,s1,s2);
 input i,s0,s1,s2;
 output d1,d2,d3,d4,d5,d6,d7,d8;
 wire w1,w2,w3;
@@ -120,10 +127,12 @@ and g8(d5,s0,w2,w3,i);
 and g9(d6,s0,w2,s2,i);
 and g10(d7,s0,s1,w3,i);
 and g11(d8,s0,s1,s2,i);
-endmodule```
+endmodule
+```
 
 Magnitude comparator:
-```module comparator(
+```
+module comparator(
   input [3:0] A, B,
   output reg A_grt_B, A_less_B, A_eq_B);
   
@@ -133,7 +142,8 @@ Magnitude comparator:
     else if(A<B) A_less_B = 1'b1;
     else A_eq_B = 1'b1;
   end
-endmodule```
+endmodule
+```
 
  
 OUTPUT WAVEFORM
