@@ -49,7 +49,9 @@ STEP:10 Double click on the Implement Design and double click on the Generate Pr
 STEP:11  On the board, by giving required input, the LEDs starts to glow light, indicating the output.
 
 VERILOG CODE
+ 
  Encoder:
+ 
 ``` module encoder(
   input [7:0] D,
   output [2:0] y);
@@ -60,6 +62,7 @@ VERILOG CODE
 endmodule```
 
 Decoder:
+
    ```module decoder(
   input [2:0] D,
   output reg [7:0] y);
@@ -81,6 +84,7 @@ Decoder:
 endmodule```
 
 Multiplexer:
+
 ```module multi(i,s,y);
 input[7:0]i;
 input[2:0]s;
@@ -100,6 +104,7 @@ endcase end
 endmodule```
 
 Demultiplexer:
+
 ```module demultiplexer(d1,d2,d3,d4,d5,d6,d7,d8,i,s0,s1,s2);
 input i,s0,s1,s2;
 output d1,d2,d3,d4,d5,d6,d7,d8;
