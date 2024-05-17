@@ -149,7 +149,7 @@ endmodule
 OUTPUT WAVEFORM
 Encoder:
 
-![Screenshot (28)](https://github.com/hemakaruna/VLSI-LAB-EXP-2/assets/160728787/f335e9fc-0c04-4520-a4f8-4745cfb5ca7b)
+![Screenshot (60)](https://github.com/hemakaruna/VLSI-LAB-EXP-2/assets/160728787/04bad03e-e613-402e-9886-c00de336e4f8)
 
 Decoder:
 
@@ -157,7 +157,7 @@ Decoder:
 
 Multiplexer:
 
-![Screenshot (34)](https://github.com/hemakaruna/VLSI-LAB-EXP-2/assets/160728787/fea187bd-4a5e-420f-9dfc-adc555eaa582)
+![Screenshot (59)](https://github.com/hemakaruna/VLSI-LAB-EXP-2/assets/160728787/54ca8a5b-b986-41eb-9af1-9d7b41cefc03)
 
 Demultiplexer:
 
