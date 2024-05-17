@@ -148,10 +148,28 @@ endmodule
  
 OUTPUT WAVEFORM
 Encoder:
+
 ![Screenshot (28)](https://github.com/hemakaruna/VLSI-LAB-EXP-2/assets/160728787/f335e9fc-0c04-4520-a4f8-4745cfb5ca7b)
 
+Decoder:
+
+![Screenshot (58)](https://github.com/hemakaruna/VLSI-LAB-EXP-2/assets/160728787/55890c4c-3300-44cc-b1f7-9bfb7edaef98)
+
+Multiplexer:
+
+![Screenshot (34)](https://github.com/hemakaruna/VLSI-LAB-EXP-2/assets/160728787/fea187bd-4a5e-420f-9dfc-adc555eaa582)
+
+Demultiplexer:
+
+![Screenshot (30)](https://github.com/hemakaruna/VLSI-LAB-EXP-2/assets/160728787/db15b28b-733d-48d4-884e-b54e3510d811)
+
+Magnitude comparator:
+
+![Screenshot (31)](https://github.com/hemakaruna/VLSI-LAB-EXP-2/assets/160728787/b7f44327-69f9-4c64-99f9-3c8df30b07dd)
 
 
-RESULT
 
+RESULT:
 
+Thus the simulation and synthesis of ENCODER, DECODER, MULTIPLEXER, DEMULTIPLEXER, 2bit
+ MAGNITUDE COMPARATOR using vivado is successfully completed and executed.
