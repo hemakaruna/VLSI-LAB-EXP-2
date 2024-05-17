@@ -57,6 +57,7 @@ endmodule
 ```
 
 OUTPUT:
+
 ![Screenshot (60)](https://github.com/hemakaruna/VLSI-LAB-EXP-2/assets/160728787/04bad03e-e613-402e-9886-c00de336e4f8)
 
 
@@ -89,6 +90,7 @@ module decoder(
 endmodule
 ```
 OUTPUT:
+
 ![Screenshot (58)](https://github.com/hemakaruna/VLSI-LAB-EXP-2/assets/160728787/55890c4c-3300-44cc-b1f7-9bfb7edaef98)
 
 MULTIPLEXER
@@ -96,6 +98,7 @@ MULTIPLEXER
 ![image](https://github.com/navaneethans/VLSI-LAB-EXP-2/assets/6987778/427f75b2-8e67-44b9-ac45-a66651787436)
 
 VERILOG CODE:
+
 ```
 module multi(i,s,y);
 input[7:0]i;
