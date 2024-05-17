@@ -138,7 +138,7 @@ endmodule```
  
 OUTPUT WAVEFORM
 Encoder:
-![Screenshot (28)](https://github.com/hemakaruna/VLSI-LAB-EXP-2/assets/160728787/eb2f7f0c-8af6-4280-88c9-cb0148f941b8)
+[Screenshot (28)](https://github.com/hemakaruna/VLSI-LAB-EXP-2/assets/160728787/eb2f7f0c-8af6-4280-88c9-cb0148f941b8)
 
 
 RESULT
